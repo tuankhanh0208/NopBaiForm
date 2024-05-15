@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    form {
+      margin-top: 8%;
+    }
+    .highlight {
+      font-size: 25px;
+      background-color: red;
+      display: inline-block;
+      padding: 25px 25px;
+      color: #fff;
+    }
+
+    .checkbox-group {
+      margin-top: 10px;
+      display: inline-flex;
+    }
+
+    .checkboxs {
+      color: #ff4c00;
+      display: flex;
+      align-items: flex-start;
+    }
+    .checkboxs p {
+      margin-left: 5px;
+    }
+    .checkbox-items {
+      margin-bottom: 5px;
+      margin-left: 10px;
+    }
+    .button-item button {
+      font-size: 18px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      margin-right: 30px;
+    }
+  </style>
+  <body>
+    <form>
+      <h2 class="highlight">SỞ THÍCH CỦA BẠN</h2>
+      <p>Họ và tên <input type="text" name="name" /></p>
+      <p>Email <input type="text" name="email" style="margin-left: 27px" /></p>
+
+      <div class="checkbox-group">
+        <label> Sở thích </label>
+        <div class="checkbox-items">
+          <div class="checkboxs">
+            <input type="checkbox" name="checkbox-item" />
+            <p>Chơi game</p>
+            <input type="checkbox" name="checkbox-item" />
+            <p>Âm nhạc</p>
+            <input type="checkbox" name="checkbox-item" />
+            <p>Đọc Sách</p>
+          </div>
+
+          <div class="checkboxs">
+            <input type="checkbox" name="checkbox-item" />
+            <p>Lướt web</p>
+            <input type="checkbox" name="checkbox-item" />
+            <p>Chơi game</p>
+            <input type="checkbox" name="checkbox-item" />
+            <p>Điện ảnh</p>
+          </div>
+
+          <div class="checkboxs">
+            <input type="checkbox" name="checkbox-item" />
+            <p>Du lịch</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-item">
+        <button type="button">Gửi thông tin</button>
+        <button type="reset">Nhập lại</button>
+      </div>
+    </form>
+  </body>
+</html>

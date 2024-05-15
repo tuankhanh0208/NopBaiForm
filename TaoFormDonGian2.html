@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #f0f0f0;
+            color: blue;
+            
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            background-color: aqua;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .internal {
+            background-color: yellow;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .form-row label {
+            width: 100px;
+            margin-right: 10px;
+        }
+        .form-row input[type="button"],
+        .form-row input[type="reset"]{
+            padding: 8px;
+            border: 5px;
+            margin-left: 50px;
+            margin-right: 50px;
+            float:right;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>ĐĂNG KÝ HỌC VIÊN</h2>
+        <form class="internal">
+            <div class="form-row">
+                <label>Họ và tên</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-row">
+                <label>Ngày sinh</label>
+                <input type="text" name="birthday">
+            </div>
+            <div class="form-row">
+                <label>Giới tính</label>
+                <input type="radio" name="gender" value="Nam">
+                <label>Nam</label>
+                <input type="radio" name="gender" value="Nữ">
+                <label>Nữ</label>
+            </div>
+            <div class="form-row">
+                <label>Địa chỉ</label>
+                <textarea name="address" rows="2" cols="30"></textarea>
+            </div>
+            <div class="form-row">
+                <label>Lớp</label>
+                <select name="Class" style="width: 100px;">
+                    <option value="">--Chọn lớp--</option>
+                    <option value="">Lớp 2</option>
+                    <option value="">Lớp 3</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label>Email</label>
+                <input type="text" name="email">
+            </div>
+            <div class="form-row">
+                <label>Điện thoại</label>
+                <input type="text" name="phone">
+            </div>
+            <div class="form-row">
+                <input type="button" name="sign_in" value="Đăng kí">
+                <input type="reset" name="reset" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
